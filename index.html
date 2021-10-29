@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  
+  <div class='container'> 
+    <div class='data_collector'>
+        <div class='data_row'> 
+           <label>  a<sub>11 </sub> </label>
+           <input type='number' class='data_input_value' id='row1_col1'> 
+        </div>
+        <div class='data_row'>
+           <label>  a<sub>12 </sub> </label>
+           <input type='number' class='data_input_value' id='row1_col2'> 
+        </div>
+      <div class='data_row'>
+           <label>  a<sub>13 </sub> </label>
+           <input type='number' class='data_input_value' id='row1_col3'> 
+        </div>
+    <div class='data_row'>
+           <label>  a<sub>21 </sub> </label>
+           <input type='number' class='data_input_value' id='row2_col1'> 
+        </div>
+    <div class='data_row'>
+           <label>  a<sub>22 </sub> </label>
+           <input type='number' class='data_input_value' id='row2_col2'> 
+        </div>
+    <div class='data_row'>
+           <label>  a<sub>23 </sub> </label>
+           <input type='number' class='data_input_value' id='row2_col3'> 
+        </div>
+    <div class='data_row'>
+           <label>  a<sub>31 </sub> </label>
+           <input type='number' class='data_input_value' id='row3_col1'> 
+        </div>
+    <div class='data_row'>
+           <label>  a<sub>32 </sub> </label>
+           <input type='number' class='data_input_value' id='row3_col2'> 
+        </div>
+    <div class='data_row'>
+           <label>  a<sub>33 </sub> </label>
+           <input type='number' class='data_input_value' id='row3_col3'> 
+        </div>
+    </div>
+    <div class='action_btn_container'>
+       <button onclick='CalculateDeterminant()'> Determinant </button>
+       <button onclick='FindTranspose()'> Transpose </button>
+       <button onclick='FindAdjoint()'> Adjoint </button>
+       <button onclick='CalculateInverse()'> Inverse </button>
+       <button onclick='validateInputFields()'> Clear Values </button>
+     <!--  <button onclick='CalculateDeterminant()'> Determinant </button>
+       <button onclick='CalculateDeterminant()'> Determinant </button>  -->
+    </div>
+    
+    <div class='result_container'> 
+      <h1> OUTPUT </h1>
+      <div id='plain_result'> 
+        <span id='plain_result_name'> Determinant </span> 
+        <input type='number' id='plain_result_value' readonly> 
+      </div>
+     <div id='result_in_matrix'>
+       <h3 id='result_in_matrix_name'> Inverse </h3>
+       <span id='result_row1_col1' class='result_value'>36</span>
+       <span id='result_row1_col2' class='result_value'>36</span>
+       <span id='result_row1_col3' class='result_value'>3bde6</span>
+       <span id='result_row2_col1' class='result_value'>36</span>
+       <span id='result_row2_col2' class='result_value'>36</span>
+       <span id='result_row2_col3' class='result_value'>36</span>
+       <span id='result_row3_col1' class='result_value'>36</span>
+       <span id='result_row3_col2' class='result_value'>36</span>
+       <span id='result_row3_col3' class='result_value'>36</span>
+     </div>  
+    </div>
+  </div>
+  
+
+  
+  <script src="script.js"></script>
+
+</body>
+</html>
